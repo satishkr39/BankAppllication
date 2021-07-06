@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Balance</title>
+</head>
+<body>
+    {% block content %}
+    <form method="POST">
+        <hr>
+        {{ form.hidden_tag() }}
+        {{ form.amount.label }} {{ form.amount }}
+        {{ form.submit() }}
+    </form>
+
+    {% endblock %}
+</body>
+</html>

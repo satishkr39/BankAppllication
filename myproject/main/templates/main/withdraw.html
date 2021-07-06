@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw</title>
+</head>
+<body>
+    {% block content %}
+        <div class="jumbotron">
+            <hr>
+            <form method="POST">
+            <h2> Welcome to withdraw window </h2>
+            {{ form.hidden_tag() }}
+            {{ form.amount.label }} {{ form.amount }}
+            <br>
+            {{ form.submit }}
+            </form>
+        </div>
+    {% endblock %}
+</body>
+</html>

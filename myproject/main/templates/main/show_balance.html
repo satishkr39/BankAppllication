@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Balance Page</title>
+</head>
+<body>
+    {% block content %}
+        <div class="jumbotron">
+            <h2> Your Current Balance is {{ balance }} </h2>
+        </div>
+    {% endblock %}
+</body>
+</html>
